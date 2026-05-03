@@ -1,0 +1,18 @@
+# Smithery configuration — https://smithery.ai/docs/config#smitheryyaml
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      MASCOPE_API_URL:
+        type: string
+        default: "https://miniapps.humanary.world"
+        description: "MAScope API base URL (override for self-hosted instances)"
+    required: []
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', 'mascope-mcp'],
+      env: config.MASCOPE_API_URL ? { MASCOPE_API_URL: config.MASCOPE_API_URL } : {}
+    })
+  exampleConfig: {}

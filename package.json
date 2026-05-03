@@ -33,6 +33,7 @@
     "url": "https://github.com/bbb-build/mascope-mcp.git"
   },
   "homepage": "https://miniapps.humanary.world",
+  "mcpName": "io.github.bbb-build/mascope-mcp",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
     "zod": "^3.25.0"
