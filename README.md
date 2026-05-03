@@ -1,3 +1,4 @@
+<!-- mcp-name: io.github.bbb-build/mascope-mcp -->
 # MAScope MCP Server
 
 MCP server for [MAScope](https://miniapps.humanary.world) — World MiniApp reviews and analytics data, powered by verified humans.
