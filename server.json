@@ -1,46 +1,46 @@
 {
-  "$schema": "https://registry.modelcontextprotocol.io/schemas/server.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.bbb-build/mascope-mcp",
-  "description": "World MiniApp reviews and analytics powered by verified humans. Every review is backed by World ID proof-of-personhood.",
+  "description": "World MiniApp reviews and analytics — verified human ratings via World ID",
+  "version": "1.0.0",
   "repository": {
     "url": "https://github.com/bbb-build/mascope-mcp",
     "source": "github"
   },
-  "version_detail": {
-    "version": "1.0.0"
-  },
   "packages": [
     {
-      "registry_name": "npm",
-      "name": "mascope-mcp",
-      "version": "1.0.0"
+      "registryType": "npm",
+      "identifier": "mascope-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
     }
   ],
-  "remotes": [],
   "tools": [
     {
       "name": "search_miniapps",
-      "description": "Search World MiniApps by keyword, category, or sort criteria. Returns verified ratings and user metrics."
+      "description": "Search World MiniApps by keyword, category, or sort criteria"
     },
     {
       "name": "get_app_details",
-      "description": "Get detailed information about a specific MiniApp including rank, user metrics, and trend data."
+      "description": "Get detailed info about a specific MiniApp"
     },
     {
       "name": "get_app_reviews",
-      "description": "Get World ID-verified reviews for a MiniApp with ratings, comments, and distribution."
+      "description": "Get World ID-verified reviews for a MiniApp"
     },
     {
       "name": "get_trending_apps",
-      "description": "Get trending World MiniApps sorted by growth rate with sparkline data."
+      "description": "Get trending apps sorted by growth rate"
     },
     {
       "name": "get_category_analytics",
-      "description": "Category breakdown with app count, total weekly users, and top apps per category."
+      "description": "Category breakdown with app count and top apps"
     },
     {
       "name": "compare_apps",
-      "description": "Compare 2-5 World MiniApps side by side on rank, users, opens, rating, and trends."
+      "description": "Compare 2-5 MiniApps side by side"
     }
   ]
 }
